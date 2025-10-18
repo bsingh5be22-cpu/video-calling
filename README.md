@@ -57,7 +57,7 @@ video_calling_soft/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/<your-username>/video-calling.git
+   git clone https://github.com/bsingh5be22-cpu/video-calling.git
    cd video-calling
    ```
 
