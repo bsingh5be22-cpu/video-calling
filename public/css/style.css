@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { font-size: 10px; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #550303, #a2644b);
+  color: #222;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li { list-style: none; }
+
+.main-container {
+  display: flex;
+  width: 95%;
+  height: 90vh;
+  background: #ffffff10;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+/* Sidebar */
+.caller-list-wrapper {
+  flex-basis: 25rem;
+  background: #ffffff30;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.caller-list-heading {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.caller-list > li {
+  width: 100%;
+  padding: 1rem;
+  background: #ffffff50;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.caller-list > li:hover {
+  background: #fff;
+  transform: scale(1.02);
+}
+
+/* Video Container */
+.video-call-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header .lg-h-font {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #ddd;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+/* Inputs */
+.room-input, .username-input {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.room-input input, .username-input input {
+  width: 25rem;
+  height: 4rem;
+  border-radius: 8px;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+
+.room-input button, .username-input button {
+  height: 4rem;
+  padding: 0 1.5rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #e64268, #b8713b);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.room-input button:hover, .username-input button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #42e695;
+}
+
+/* Video Streams */
+.video-streams {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.video-box {
+  width: 35rem;
+  height: 25rem;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #ffffff40;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Controls */
+.controls {
+  margin-bottom: 2rem;
+}
+
+.controls button {
+  margin: 0 6px;
+  height: 4rem;
+  min-width: 10rem;
+  background: linear-gradient(90deg, #ea66d0, #764ba2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px #764ba2;
+}
+
+#endCallBtn {
+  background: linear-gradient(90deg, #ff5858, #f09819);
+}
+
+/* Chat */
+.chat-container {
+  width: 35rem;
+  background: #ffffff15;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.chat-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+#chatWindow {
+  background: #fff;
+  height: 15rem;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 0.8rem;
+}
+
+#chatInput {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.4rem;
+}
+
+#chatSendBtn {
+  background: linear-gradient(90deg, #42e695, #3bb2b8);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#chatSendBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #42e695;
+}

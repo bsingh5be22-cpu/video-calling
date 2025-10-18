@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proj-37 Video Calling App</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/socket.io.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</head>
+<body>
+  <main class="main-container">
+    <aside class="caller-list-wrapper">
+      <h1 class="caller-list-heading h-font">Connected Users</h1>
+      <ul id="allusers" class="caller-list"></ul>
+    </aside>
+
+    <section class="video-call-container">
+      <div class="app-header">
+        <h1 class="lg-h-font"> Video Calling Software: Developed with ❤️ for Ikarus</h1>
+        <p class="subtitle">Connect. Share. Communicate.</p>
+      </div>
+
+      <div class="username-input">
+        <input id="username" type="text" placeholder="Enter your username" />
+        <button id="setUsername">Set</button>
+      </div>
+
+      <div class="room-input">
+        <input id="roomId" type="text" placeholder="Enter or Generate Meeting ID" />
+        <button id="createRoom">Create</button>
+        <button id="joinRoom">Join</button>
+      </div>
+
+      <div class="video-streams" id="videoStreams"></div>
+
+      <div class="controls">
+        <button id="muteBtn">🎙️ Mute</button>
+        <button id="camBtn">📷 Camera</button>
+        <button id="screenShareBtn">🖥️ Share</button>
+        <button id="endCallBtn">❌ End</button>
+      </div>
+
+      <div class="chat-container">
+        <h2 class="chat-heading">💬 Chat Box</h2>
+        <div id="chatWindow"></div>
+        <div class="chat-input-area">
+          <input id="chatInput" type="text" placeholder="Type your message..." />
+          <button id="chatSendBtn">Send</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
