@@ -93,11 +93,6 @@ video_calling_soft/
 * **Socket.io** handles signaling and communication between clients.
 * **WebRTC** establishes direct peer-to-peer video and audio streams between users.
 
----
-
-### 📸 Preview
-
-*Add screenshots or a short GIF of your app running here.*
 
 ---
 
